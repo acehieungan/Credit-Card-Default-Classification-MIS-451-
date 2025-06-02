@@ -24,7 +24,6 @@ Initial analysis revealed a clear class imbalance and a few categorical anomalie
 - **Weak predictors**: Gender, Age, Education, Marital Status
 - **No missing or duplicate values**
   
-![Figure: Default vs Non-default Distribution](path_to_fig1.png)
 
 ---
 
