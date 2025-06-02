@@ -74,7 +74,8 @@ To prepare the data, we applied the following steps:
 
 ## References
 
-UCI Machine Learning Repository. (n.d.). https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
+UCI Machine Learning Repository. (n.d.). 
+  https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 
 
 
