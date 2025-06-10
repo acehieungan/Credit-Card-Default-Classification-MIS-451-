@@ -3,7 +3,7 @@
 This project strives to develop and evaluate machine learning models to predict credit card default risk, drawing from the UCI "Default of Credit Card Clients" dataset. By examining customer demographic profiles and payment habits, we seek to classify clients into two groups: those at risk of defaulting and those not, offering valuable insights for business decision-making.
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## :rocket: Project Overview
@@ -19,7 +19,7 @@ This project strives to develop and evaluate machine learning models to predict 
 | Key Techniques              | EDA, Feature Engineering, SMOTE, Modeling  |
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## :bar_chart: Exploratory Data Analysis (EDA)
@@ -31,7 +31,7 @@ Initial findings highlight a clear class imbalance and some unusual categorical 
 - **No missing or duplicate values**
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## :gear: Data Preprocessing
@@ -45,7 +45,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 - **Balancing**: Implemented SMOTE on the training set to correct class imbalance
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## :chart_with_upwards_trend: Models and Results
@@ -60,7 +60,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 > The MLP Neural Network model stood out, effectively managing class imbalance and accurately predicting rare default cases, making it a strong choice for business applications. :star2:
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## :bulb: Key Insights
@@ -71,7 +71,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 - Class balancing with SMOTE is vital to ensure unbiased predictions, supporting fair risk assessment.
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## :hammer_and_wrench: Challenges & Solutions
@@ -84,7 +84,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 | Feature scaling               | Standardized inputs for optimal SVM and neural network performance    |
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## :books: References
@@ -93,7 +93,7 @@ To enhance data quality for analysis, we carefully applied these steps:
   [https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 
   
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## :busts_in_silhouette: Team Members
@@ -106,7 +106,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 | Trần Tiến Thảo Hiếu Ngân  | 2032300513     |
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ## :tada: Conclusion
