@@ -2,6 +2,8 @@
 
 This project strives to develop and evaluate machine learning models to predict credit card default risk, drawing from the UCI "Default of Credit Card Clients" dataset. By examining customer demographic profiles and payment habits, we seek to classify clients into two groups: those at risk of defaulting and those not, offering valuable insights for business decision-making.
 
+
+
 ## :rocket: Project Overview
 
 | Item                        | Description                                |
@@ -11,26 +13,26 @@ This project strives to develop and evaluate machine learning models to predict 
 | Features                    | 23 variables + 1 binary target (default)   |
 | Target Variable             | Default payment next month (0 or 1)        |
 | Class Imbalance             | ~77% No Default, ~23% Default              |
-| Tools Used                  | Python, Pandas, Scikit-learn, Keras :snake:|
+| Tools Used                  | Python, Pandas, Scikit-learn, Keras        |
 | Key Techniques              | EDA, Feature Engineering, SMOTE, Modeling  |
 
 ## :bar_chart: Exploratory Data Analysis (EDA)
 
 Initial findings highlight a clear class imbalance and some unusual categorical data. Key observations include:
 
-- **Most predictive features**: Recent payment delays (PAY_0, PAY_2, PAY_3) :clock1:
-- **Weak predictors**: Gender, Age, Education, Marital Status :person_shrugging:
-- **No missing or duplicate values** :white_check_mark:
+- **Most predictive features**: Recent payment delays (PAY_0, PAY_2, PAY_3) 
+- **Weak predictors**: Gender, Age, Education, Marital Status 
+- **No missing or duplicate values** 
 
 ## :gear: Data Preprocessing
 
 To enhance data quality for analysis, we carefully applied these steps:
 
-- **Invalid category handling**: Reassigned undefined EDUCATION & MARRIAGE values to "others" :wrench:
-- **One-hot encoding**: Converted categorical features into binary format :1234:
-- **Feature engineering**: Summarized six-month bill and payment totals :chart_with_upwards_trend:
-- **Scaling**: Used `StandardScaler` to standardize features :scales:
-- **Balancing**: Implemented SMOTE on the training set to correct class imbalance :balance_scale:
+- **Invalid category handling**: Reassigned undefined EDUCATION & MARRIAGE values to "others" 
+- **One-hot encoding**: Converted categorical features into binary format 
+- **Feature engineering**: Summarized six-month bill and payment totals 
+- **Scaling**: Used `StandardScaler` to standardize features 
+- **Balancing**: Implemented SMOTE on the training set to correct class imbalance 
 
 ## :chart_with_upwards_trend: Models and Results
 
@@ -45,10 +47,10 @@ To enhance data quality for analysis, we carefully applied these steps:
 
 ## :bulb: Key Insights
 
-- Recent payment patterns serve as the most reliable indicators of default risk, crucial for timely interventions. :moneybag:
-- Advanced models (Neural Networks, SVM) better capture complex feature interactions, enhancing predictive power. :brain:
-- Demographic details alone offer limited predictive value, suggesting focus on behavioral data. :person_shrugging:
-- Class balancing with SMOTE is vital to ensure unbiased predictions, supporting fair risk assessment. :balance_scale:
+- Recent payment patterns serve as the most reliable indicators of default risk, crucial for timely interventions. 
+- Advanced models (Neural Networks, SVM) better capture complex feature interactions, enhancing predictive power. 
+- Demographic details alone offer limited predictive value, suggesting focus on behavioral data. 
+- Class balancing with SMOTE is vital to ensure unbiased predictions, supporting fair risk assessment. 
 
 ## :hammer_and_wrench: Challenges & Solutions
 
@@ -75,7 +77,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 
 ## :tada: Conclusion
 
-This project highlights the importance of proper preprocessing, model selection, and threshold tuning when working with imbalanced financial datasets. Our work not only improves default prediction but also deepens understanding of client behavior—a key asset for credit risk management. :lock:
+This project highlights the importance of proper preprocessing, model selection, and threshold tuning when working with imbalanced financial datasets. Our work not only improves default prediction but also deepens understanding of client behavior—a key asset for credit risk management. 
 
 
 
