@@ -2,7 +2,7 @@
 
 This project strives to develop and evaluate machine learning models to predict credit card default risk, drawing from the UCI "Default of Credit Card Clients" dataset. By examining customer demographic profiles and payment habits, we seek to classify clients into two groups: those at risk of defaulting and those not, offering valuable insights for business decision-making.
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## :rocket: Project Overview
 
