@@ -1,5 +1,7 @@
 # :credit_card: Credit Card Default Classification MIS 451
 
+
+
 This project aims to develop and evaluate machine learning models to predict credit card default risk, drawing from the UCI "Default of Credit Card Clients" dataset. Examining customer demographic profiles and payment habits allows us to classify clients into two groups: those at risk of defaulting and those not, providing valuable insights for business decision-making
 
 
@@ -7,6 +9,7 @@ This project aims to develop and evaluate machine learning models to predict cre
 
 
 ## :rocket: Project Overview
+
 
 
 | Item                        | Description                                |
@@ -24,6 +27,7 @@ This project aims to develop and evaluate machine learning models to predict cre
 
 
 ## :bar_chart: Exploratory Data Analysis (EDA)
+
 
 
 Initial findings highlight a clear class imbalance and some unusual categorical data. Key observations include:
@@ -54,6 +58,8 @@ To enhance data quality for analysis, we carefully applied these steps:
 
 ## :chart_with_upwards_trend: Models and Results
 
+
+
 | Model                  | Accuracy | F1-Score (Default) | ROC-AUC |
 |------------------------|----------|--------------------|---------|
 | Logistic Regression    | 64%      | 0.44               | 0.7089  |
@@ -70,6 +76,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 ## :bulb: Key Insights
 
 
+
 - Recent payment patterns serve as the most reliable indicators of default risk, crucial for timely interventions. 
 - Advanced models (Neural Networks, SVM) better capture complex feature interactions, enhancing predictive power. 
 - Demographic details alone offer limited predictive value, suggesting focus on behavioral data. 
@@ -80,6 +87,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 
 
 ## :hammer_and_wrench: Challenges & Solutions
+
 
 
 | Challenge                      | Solution                                                              |
@@ -96,6 +104,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 ## :books: References
 
 
+
   UCI Machine Learning Repository. (n.d.).  
   [https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 
@@ -104,6 +113,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 
 
 ## 👨‍👩‍👧‍👦 Team Members
+
 
 
 | Name                      | Student ID     |
@@ -118,6 +128,7 @@ To enhance data quality for analysis, we carefully applied these steps:
 
 
 ## :tada: Conclusion
+
 
 
 This project highlights the importance of proper preprocessing, model selection, and threshold tuning when working with imbalanced financial datasets. Our work not only improves default prediction but also deepens understanding of client behavior—a key asset for credit risk management. :moneybag:
