@@ -10,7 +10,7 @@ This project strives to develop and evaluate machine learning models to predict 
 
 | Item                        | Description                                |
 |-----------------------------|--------------------------------------------|
-| Dataset Source              | UCI Machine Learning Repository :link:     |
+| Dataset Source              | UCI Machine Learning Repository            |
 | Records                     | 30,000 credit card clients (Taiwan)        |
 | Features                    | 23 variables + 1 binary target (default)   |
 | Target Variable             | Default payment next month (0 or 1)        |
