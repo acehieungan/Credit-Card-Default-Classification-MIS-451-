@@ -1,45 +1,38 @@
-# Credit Card Default Calssification MIS 451
+# :credit_card: Credit Card Default Classification MIS 451
 
-This project aims to build and evaluate machine learning models to predict credit card default risk using the UCI "Default of Credit Card Clients" dataset. By analyzing customer demographic and payment behavior data, we attempt to classify clients into two categories: those likely to default and those not likely to default.
+This project strives to develop and evaluate machine learning models to predict credit card default risk, drawing from the UCI "Default of Credit Card Clients" dataset. By examining customer demographic profiles and payment habits, we seek to classify clients into two groups: those at risk of defaulting and those not, offering valuable insights for business decision-making.
 
-## Project Overview
+## :rocket: Project Overview
 
 | Item                        | Description                                |
-|----------------------------|--------------------------------------------|
-| Dataset Source             | UCI Machine Learning Repository             |
-| Records                    | 30,000 credit card clients (Taiwan)        |
-| Features                   | 23 variables + 1 binary target (default)    |
-| Target Variable            | Default payment next month (0 or 1)         |
-| Class Imbalance            | ~77% No Default, ~23% Default               |
-| Tools Used                 | Python, Pandas, Scikit-learn, Keras         |
-| Key Techniques             | EDA, Feature Engineering, SMOTE, Modeling   |
+|-----------------------------|--------------------------------------------|
+| Dataset Source              | UCI Machine Learning Repository :link:     |
+| Records                     | 30,000 credit card clients (Taiwan)        |
+| Features                    | 23 variables + 1 binary target (default)   |
+| Target Variable             | Default payment next month (0 or 1)        |
+| Class Imbalance             | ~77% No Default, ~23% Default              |
+| Tools Used                  | Python, Pandas, Scikit-learn, Keras :snake:|
+| Key Techniques              | EDA, Feature Engineering, SMOTE, Modeling  |
 
+## :bar_chart: Exploratory Data Analysis (EDA)
 
+Initial findings highlight a clear class imbalance and some unusual categorical data. Key observations include:
 
-## Exploratory Data Analysis (EDA)
+- **Most predictive features**: Recent payment delays (PAY_0, PAY_2, PAY_3) :clock1:
+- **Weak predictors**: Gender, Age, Education, Marital Status :person_shrugging:
+- **No missing or duplicate values** :white_check_mark:
 
-Initial analysis revealed a clear class imbalance and a few categorical anomalies. Key points include:
+## :gear: Data Preprocessing
 
-- **Most predictive features**: Recent payment delays (PAY_0, PAY_2, PAY_3)
-- **Weak predictors**: Gender, Age, Education, Marital Status
-- **No missing or duplicate values**
-  
+To enhance data quality for analysis, we carefully applied these steps:
 
+- **Invalid category handling**: Reassigned undefined EDUCATION & MARRIAGE values to "others" :wrench:
+- **One-hot encoding**: Converted categorical features into binary format :1234:
+- **Feature engineering**: Summarized six-month bill and payment totals :chart_with_upwards_trend:
+- **Scaling**: Used `StandardScaler` to standardize features :scales:
+- **Balancing**: Implemented SMOTE on the training set to correct class imbalance :balance_scale:
 
-
-## Data Preprocessing
-
-To prepare the data, we applied the following steps:
-
-- **Invalid category handling**: Mapped undefined EDUCATION & MARRIAGE values to "others"
-- **One-hot encoding**: Categorical features encoded to binary
-- **Feature engineering**: Aggregated six-month bill/payment totals
-- **Scaling**: Standardized features using `StandardScaler`
-- **Balancing**: Applied SMOTE to training set to fix class imbalance
-
-
-
-## Models and Results
+## :chart_with_upwards_trend: Models and Results
 
 | Model                  | Accuracy | F1-Score (Default) | ROC-AUC |
 |------------------------|----------|--------------------|---------|
@@ -48,38 +41,30 @@ To prepare the data, we applied the following steps:
 | Support Vector Machine | 77%      | 0.52               | 0.7469  |
 | MLP Neural Network     | **80%**  | **0.52**           | **0.7572** |
 
-> The MLP Neural Network model delivered the best overall performance, especially in handling class imbalance and predicting minority cases.
+> The MLP Neural Network model stood out, effectively managing class imbalance and accurately predicting rare default cases, making it a strong choice for business applications. :star2:
 
+## :bulb: Key Insights
 
+- Recent payment patterns serve as the most reliable indicators of default risk, crucial for timely interventions. :moneybag:
+- Advanced models (Neural Networks, SVM) better capture complex feature interactions, enhancing predictive power. :brain:
+- Demographic details alone offer limited predictive value, suggesting focus on behavioral data. :person_shrugging:
+- Class balancing with SMOTE is vital to ensure unbiased predictions, supporting fair risk assessment. :balance_scale:
 
-## Key Insights
-
-- Recent payment behavior is the strongest indicator of default risk.
-- Complex models (Neural Networks, SVM) handle feature interactions better.
-- Demographics have little standalone predictive power.
-- Class balancing (SMOTE) is essential to avoid bias in predictions.
-
-
-
-## Challenges & Solutions
+## :hammer_and_wrench: Challenges & Solutions
 
 | Challenge                      | Solution                                                              |
 |-------------------------------|-----------------------------------------------------------------------|
-| Class imbalance               | Used SMOTE to synthetically balance minority class                    |
-| Irregular categorical values  | Grouped undefined values into “Others” to reduce noise                |
-| Poor precision in base models | Tuned thresholds and selected better models (Random Forest, MLP)      |
-| Feature scaling               | Standardized inputs for SVM and neural network compatibility           |
+| Class imbalance               | Applied SMOTE to artificially balance the minority class              |
+| Irregular categorical values  | Grouped undefined values into “Others” to reduce data noise           |
+| Poor precision in base models | Fine-tuned thresholds and selected top models (Random Forest, MLP)    |
+| Feature scaling               | Standardized inputs for optimal SVM and neural network performance    |
 
+## :books: References
 
+- UCI Machine Learning Repository. (n.d.).  
+  [https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients](https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
 
-## References
-
-UCI Machine Learning Repository. (n.d.). 
-  https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients)
-
-
-
-## Team Members
+## :busts_in_silhouette: Team Members
 
 | Name                      | Student ID     |
 |---------------------------|----------------|
@@ -88,11 +73,9 @@ UCI Machine Learning Repository. (n.d.).
 | Bùi Thị Thanh Thảo        | 2232300157     |
 | Trần Tiến Thảo Hiếu Ngân  | 2032300513     |
 
+## :tada: Conclusion
 
-
-## Conclusion
-
-This project highlights the importance of proper preprocessing, model selection, and threshold tuning when working with imbalanced financial datasets. Our work not only improves default prediction but also deepens understanding of client behavior—a key asset for credit risk management.
+This project highlights the importance of proper preprocessing, model selection, and threshold tuning when working with imbalanced financial datasets. Our work not only improves default prediction but also deepens understanding of client behavior—a key asset for credit risk management. :lock:
 
 
 
